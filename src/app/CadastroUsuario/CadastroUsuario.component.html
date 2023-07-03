@@ -1,0 +1,25 @@
+<div class="login-box">
+  <h2>Cadastro</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="nome" [(ngModel)]="Nome" required [ngModelOptions]="{ standalone: true }">
+      <label>Nome</label>
+    </div>
+    <div class="user-box">
+      <input type="text" name="Email" [(ngModel)]="Email"  required [ngModelOptions]="{ standalone: true }">
+      <label>E-mail</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="Senha" [(ngModel)]="Senha" required [ngModelOptions]="{ standalone: true }">
+      <label>Senha</label>
+    </div>
+    <a href="#" (click)="Cadastro()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Entrar
+    </a>
+    <a>Cadastre-se</a>
+  </form>
+</div>
